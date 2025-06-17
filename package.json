@@ -1,0 +1,32 @@
+{
+  "name": "datastar-hiccup",
+  "version": "0.0.1",
+  "displayName": "Datastar Hiccup",
+  "description": "Provides autocomplete for Datastar attributes in Clojure Hiccup code. Adapted from the official Datastar VS Code extension by Ben Croker.",
+  "author": "Anton Lobach",
+  "publisher": "antonlobach",
+  "license": "MIT",
+  "repository": "https://github.com/starfederation/datastar",
+  "galleryBanner": {
+    "color": "#bee3f8",
+    "theme": "light"
+  },
+  "engines": {
+    "vscode": "^1.63.0"
+  },
+  "contributes": {
+    "snippets": [
+      {
+        "language": "clojure",
+        "path": "./src/data-attributes-clj.json"
+      }
+    ]
+  },
+  "devDependencies": {
+    "@vscode/vsce": "^2.19.0"
+  },
+  "scripts": {
+    "build": "npm exec vsce package",
+    "publish": "npm exec vsce publish $npm_package_version && npx ovsx publish datastar-vscode-$npm_package_version.vsix"
+  }
+}
