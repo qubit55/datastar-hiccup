@@ -1,6 +1,6 @@
-# Datastar Extension for Visual Studio Code
+# Datastar Hiccup Extension for Visual Studio Code 
 
-"Provides autocomplete for [Datastar](https://data-star.dev/) attributes in Clojure Hiccup code. Adapted from the official Datastar VS Code extension by Ben Croker."
+Provides autocomplete for [Datastar](https://data-star.dev/) attributes in Clojure Hiccup code. Adapted from the official Datastar VS Code extension by Ben Croker.
 
 ## License
 
